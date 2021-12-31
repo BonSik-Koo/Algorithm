@@ -1,0 +1,36 @@
+#include <iostream>
+#include <stack>
+#include <string>
+using namespace std;
+
+int main()
+{
+	string input;
+	int result=0, len=0;
+	cin >> input;
+	
+	len = input.length();
+	stack<char> stack;
+	for (int i = 0; i < len; i++)
+	{
+		if (input[i] == '(')
+			stack.push('(');
+		else if (input[i] == ')')
+		{
+			if (input[i - 1] == '(')//레이저
+			{
+				stack.pop();
+				result += stack.size(); //막대의 개수
+			}
+			else //막대의 끝에 도달
+			{
+				stack.pop();
+				result += 1;
+			}
+		}
+	}
+	cout << result;
+
+
+	return 0;
+}
