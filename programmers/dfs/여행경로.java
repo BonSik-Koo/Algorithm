@@ -7,7 +7,7 @@ public class 여행경로 {
 
     public static boolean[] visit;
     public static String result; //결과의 경로를 담는 변수
-    public static int check=0; //오름차순의 경로를 구할경우 나머지 경우를 계산하지 않기 위해 사용
+    public static boolean check=false; //오름차순의 경로를 구할경우 나머지 경우를 계산하지 않기 위해 사용
 
     public static String[] solution(String[][] tickets) {
         String[] answer = {};
@@ -36,11 +36,11 @@ public class 여행경로 {
     public static void bps(String[][]tickets, String start, String router,int count ) {
       
         if( count == tickets.length) {
-            check=tickets.length;   
+            check=true;   
             result = router;
             return;
         }
-        if(check==5)
+        if(check==true)
             return;
       
         for(int i =0; i<tickets.length;i++) {
@@ -53,10 +53,8 @@ public class 여행경로 {
     }
 
     public static void main(String[] args) {
-
         String[][] temp ={{"ICN", "SFO"}, {"ICN", "ATL"}, {"SFO", "ATL"}, {"ATL", "ICN"}, {"ATL", "SFO"}};
         solution(temp);
-
     }
 }
 
