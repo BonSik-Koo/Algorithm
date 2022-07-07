@@ -67,3 +67,6 @@ public class DFS_14889 {
         System.out.println(result);
     }
 }
+
+==========================
+![image](https://user-images.githubusercontent.com/96917871/177781943-682ee70e-8e61-4e5d-9cf3-08328480974e.png)
