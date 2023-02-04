@@ -1,4 +1,4 @@
-package baekjoon.dfs;
+package baekjoon.dfs_bfs;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -13,14 +13,14 @@ public class Dfs_2606 {
 
     public static int computerNum=0;
 
-    public static void bfs(int n) {
+    public static void dfs(int n) {
 
         node[n]=true;
         for(int i=0;i<edge[n].size();i++) {
             int endNode = edge[n].get(i);
             if(node[endNode]==false) {
                 computerNum++;
-                bfs(endNode);
+                dfs(endNode);
             }
         }
     }
@@ -45,7 +45,7 @@ public class Dfs_2606 {
             edge[n1].add(n2);
             edge[n2].add(n1);
         }
-        bfs(1);
+        dfs(1);
 
         System.out.println(computerNum);
     }
