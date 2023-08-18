@@ -1,2 +1,6 @@
 # 프로젝트 제외 경로
 /out/
+/src/ict/
+/src/SCPC_2022
+/src/SWExpertAcademyProblem
+/src/SWExpertAcademy사전문제
