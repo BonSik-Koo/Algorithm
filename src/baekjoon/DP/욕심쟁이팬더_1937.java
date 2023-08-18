@@ -1,11 +1,11 @@
-package baekjoon.dp;
+package baekjoon.DP;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class 욕심쟁이판다_1937 {
+public class 욕심쟁이팬더_1937 {
     static int n;
     static int[][] dp;
     static int[][] forest;
@@ -59,4 +59,3 @@ public class 욕심쟁이판다_1937 {
         return dp[x][y];
     }
 }
-
