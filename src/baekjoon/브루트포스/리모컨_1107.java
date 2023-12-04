@@ -51,7 +51,6 @@ public class 리모컨_1107 {
                 dfs(goal, newChannel, count + 1);
             }
         }
-
     }
 
 }
