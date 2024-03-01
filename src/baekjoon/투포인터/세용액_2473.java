@@ -1,4 +1,4 @@
-package baekjoon.이분탐색;
+package baekjoon.투포인터;
 
 import java.io.*;
 import java.util.*;
