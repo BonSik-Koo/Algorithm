@@ -1,4 +1,4 @@
-package programmers.L3.순위검색;
+package programmers.L2.순위검색;
 import java.util.*;
 
 class Solution {
